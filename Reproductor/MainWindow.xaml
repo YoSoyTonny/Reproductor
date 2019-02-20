@@ -1,0 +1,28 @@
+﻿<Window x:Class="Reproductor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reproductor"
+        mc:Ignorable="d"
+        Title="Reproductor MP3 prro" Height="221" Width="800">
+    <Grid Margin="0,0,0,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="203*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtRutaArchivo" HorizontalAlignment="Left" Height="23" Margin="22,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,32,0,0" TextWrapping="Wrap" Text="Archivo" VerticalAlignment="Top"/>
+        <Button x:Name="btnElegirArchivo" Content="Examinar" HorizontalAlignment="Left" Margin="524.077,56,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnElegirArchivo_Click"/>
+        <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnPausa" Content="Pausa" HorizontalAlignment="Left" Margin="102,93,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnDetener" Content="Detener" HorizontalAlignment="Left" Margin="182,93,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <Slider x:Name="sldReproduccion" HorizontalAlignment="Left" Margin="22,122,0,0" VerticalAlignment="Top" Width="750" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="lvlTiempoTotal" HorizontalAlignment="Left" Margin="561.077,148,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="lvlTiempoActual" HorizontalAlignment="Left" Margin="22,148,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top"/>
+        <Slider x:Name="sldVolumen" HorizontalAlignment="Left" Margin="411.077,90,0,0" VerticalAlignment="Top" Width="155" Height="23" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="335.077,90,0,0" TextWrapping="Wrap" Text="Volumen" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="lvlPorcentajeVolumen" HorizontalAlignment="Left" Margin="573.077,90,0,0" TextWrapping="Wrap" Text="0%" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>
