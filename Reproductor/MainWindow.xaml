@@ -18,7 +18,7 @@
         <Button x:Name="btnPausa" Content="Pausa" HorizontalAlignment="Left" Margin="102,93,0,0" VerticalAlignment="Top" Width="75" Click="btnPausa_Click" IsEnabled="False"/>
         <Button x:Name="btnDetener" Content="Detener" HorizontalAlignment="Left" Margin="182,93,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" IsEnabled="False" Click="btnDetener_Click"/>
         <Slider x:Name="sldReproduccion" HorizontalAlignment="Left" Margin="22,122,0,0" VerticalAlignment="Top" Width="750" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="lvlTiempoTotal" HorizontalAlignment="Left" Margin="524,148,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Grid.Column="1" Width="66"/>
+        <TextBlock x:Name="lvlTiempoTotal" HorizontalAlignment="Left" Margin="551,145,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Grid.Column="1" Width="48"/>
         <TextBlock x:Name="lvlTiempoActual" HorizontalAlignment="Left" Margin="22,148,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="66"/>
         <Slider x:Name="sldVolumen" HorizontalAlignment="Left" Margin="413,94,0,0" VerticalAlignment="Top" Width="155" Height="23" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="349,97,0,0" TextWrapping="Wrap" Text="Volumen" VerticalAlignment="Top" Grid.Column="1"/>
